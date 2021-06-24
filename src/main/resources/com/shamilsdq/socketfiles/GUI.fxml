@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shamilsdq.socketfiles.GUIController">
+   <children>
+      <VBox id="formPanel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="NEVER">
+         <children>
+            <TextField id="peerAddressInput" fx:id="peerAddressInput" alignment="TOP_LEFT" promptText="peer address" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></TextField>
+            <TextField id="peerFileInput" fx:id="peerFileInput" alignment="TOP_LEFT" promptText="no file selected">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></TextField>
+            <HBox prefHeight="0.0" prefWidth="0.0">
+               <children>
+                  <Button id="fileSelectButton" fx:id="fileSelectButton" mnemonicParsing="false" text="SELECT FILE" />
+                  <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                  <Button id="fileSendButton" fx:id="fileSendButton" mnemonicParsing="false" text="SEND" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="progressPanel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <HBox>
+               <children>
+                  <Label styleClass="keyLabel" text="PEER" HBox.hgrow="NEVER" />
+                  <Label fx:id="transferPeer" styleClass="valueLabel" text="NULL" />
+               </children>
+            </HBox>
+            <HBox layoutX="60.0" layoutY="202.0">
+               <children>
+                  <Label styleClass="keyLabel" text="FILE" HBox.hgrow="NEVER" />
+                  <Label fx:id="transferFile" styleClass="valueLabel" text="NULL" />
+               </children>
+            </HBox>
+            <HBox layoutX="60.0" layoutY="210.0">
+               <children>
+                  <Label styleClass="keyLabel" text="STATUS" HBox.hgrow="NEVER" />
+                  <Label fx:id="transferStatus" styleClass="valueLabel" text="NULL" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

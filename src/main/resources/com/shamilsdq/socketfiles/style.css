@@ -1,0 +1,85 @@
+#formPanel
+{
+    -fx-background-color: #EECCCC;
+    -fx-padding: 50px 30px 50px 30px;
+}
+
+
+#formPanel TextField
+{
+    -fx-font-size: 15px;
+    -fx-padding: 5px 15px 5px 15px;
+    -fx-pref-width: 210px;
+    
+    -fx-border-color: #DDDDDD;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+
+#formPanel Button
+{
+    -fx-font-size: 15px;
+    -fx-padding: 5px 20px 5px 20px;
+    
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+
+#fileSelectButton
+{
+    -fx-background-color: #DDDDDD;
+    -fx-border-color: #BBBBBB;
+}
+
+#fileSelectButton:disabled
+{
+    -fx-background-color: #CCCCCC;
+    -fx-border-color: #AAAAAA;
+    -fx-text-fill: #999999;
+}
+
+
+#fileSendButton
+{
+    -fx-background-color: #009922;
+    -fx-border-color: #008811;
+    -fx-text-fill: #FFFFFF;
+}
+
+#fileSendButton:disabled
+{
+    -fx-background-color: #CCCCCC;
+    -fx-border-color: #AAAAAA;
+    -fx-text-fill: #999999;
+}
+
+
+
+
+
+#progressPanel
+{
+    -fx-padding: 30px;
+}
+
+#progressPanel HBox
+{
+    -fx-padding: 5px 0px 5px 0px;
+}
+
+
+.keyLabel
+{
+    -fx-min-width: 70px;
+    -fx-pref-width: 70px;
+    -fx-max-width: 70px;
+}
+
+.valueLabel
+{
+    -fx-min-width: 150px;
+    -fx-pref-width: 150px;
+    -fx-max-width: 150px;
+}
